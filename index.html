@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/master.css">
+    <title>task_3</title>
+</head>
+<body>
+
+    <!-- Start  Header  -->
+    <header>
+        <h1>Web Development Course</h1>
+    </header>
+    <!-- End  Header -->
+
+    <!-- Start  Main -->
+    <main>
+
+        <fieldset>
+
+            <legend>Reservation Now</legend>
+
+            <form method="post">
+
+                <label for="name">Full Name:</label><br>
+                <input type="text"  id="name" name="YourName" placeholder="Enter Your  Name" required><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email"  name="YourEmail"  placeholder="Enter Your Email"><br>
+
+                <label for="number">Phone Number:</label><br>
+                <input type="number" id="number" name="YourNumber" placeholder="Enter Your Number" required><br>
+
+                <label for="birth">Date of Birth:</label><br>
+                <input type="date" id="birth" name="BirthDay" required><br>
+
+                <div class="gender">
+                    <label for="gender_M">Male:</label>
+                    <input type="radio" id="gender_M" name="gender" value="male">
+                    
+                    <label for="gender_F">Female:</label>
+                    <input type="radio" id="gender_F" name="gender" value="female">
+                </div>
+                    
+                <label for="EX">Programming Experience (in years):</label><br>
+                <input type="number" id="EX" name="YourEX"  min="0" max="100" required><br>
+
+                <label for="select">Course Interested In</label><br>
+                <select name="interestIn" id="select" >
+                    <optgroup label="Front end">
+                        <option>Select</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="js">JavaScript</option>
+                        <option value="TW">Tailwind</option>
+                        <option value="BS">BootStrap</option>
+                        <option value="sass">Sass</option>
+                        <option value="jquery">Jquery</option>
+                        <option value="React_js">React JS</option>
+                        <option value="React_native">React Native</option>
+                        <option value="next_js">Next Js</option>
+                        <option value="angluer">Angluer</option>
+                    </optgroup>
+                    <optgroup label="Back end">
+                        <option value="node">Js & Nodejs & Express JS</option>
+                        <option value="spring">Java & Spring</option>
+                        <option value="laravel">PHP & Laravel </option>
+                        <option value="net">C# & .Net </option>
+                        <option value="mysql">SQL & MYSQL</option>
+                        <option value="oracle">SQL & Oracle</option>
+                        <option value="mango">SQL & mango</option>
+                    </optgroup>
+                </select>
+
+                <P>If You Have Any Skill Please check them.</P>
+                <div class="skill">
+                    <input id="S_html" type="checkbox" value="html" name="HTML">
+                    <label for="S_html">HTML</label><br>
+
+                    <input id="S_css" type="checkbox" value="css" name="CSS">
+                    <label for="S_css">CSS</label><br>
+
+                    <input id="S_js" type="checkbox" value="js" name="JS">
+                    <label for="S_js">JavaScript</label><br>
+
+                    <input id="S_tailwind" type="checkbox" value="tailwind" name="TW">
+                    <label for="S_tailwind">Tailwind</label><br>
+        
+                    <input id="S_bootstrap" type="checkbox" value="bootstrap" name="BS">
+                    <label for="S_bootstrap">Bootstrap</label><br>
+                    
+                    <input id="S_jquery" type="checkbox" value="jquery" name="JQUERY">
+                    <label for="S_jquery">Jquery</label>
+                </div>
+
+                <label for="time">Preferred Course Time:</label><br>
+                <input type="time" id="time" name="Time" ><br>
+
+                <label for="location">Preferred Loaction</label><br>
+                <input list="lct" id="location" name="Loaction"><br>
+                <datalist id="lct">
+                    <option value="Cairo">
+                    <option value="Alexandria">
+                    <option value="Giza">
+                    <option value="Aswan">
+                    <option value="Luxor">
+                    <option value="Tanta">
+                </datalist>
+
+                <label for="area">Other Interests (optional):</label><br>
+                <textarea name="Textarea" id="area" cols="40" rows="10"></textarea><br>
+
+                <button type="submit">Reserve Course</button>
+            </form>
+                
+        </fieldset>
+
+    </main>
+    <!-- End Main -->
+
+
+</body>
+</html>

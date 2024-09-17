@@ -1,0 +1,66 @@
+body{
+    width: 100%;
+    scroll-behavior: smooth;
+    display: flex;
+    justify-content: center ; 
+    align-items: center;
+    flex-direction: column;
+}
+
+header{
+    font-family: cursive;
+    color: cornflowerblue;
+}
+
+main{
+    width: 40%;
+    height: 100vh;
+}
+
+fieldset {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(334deg  ,cornflowerblue , white);
+    padding: 20px  0;
+    
+    legend {
+        font-size: 15px;
+        padding: 0 20px;
+        font-family: cursive;
+        color: chocolate;
+    }
+
+    form {
+        label{
+            font-family: cursive;
+            color: rgb(190, 150, 6);
+        }
+        input[type="text"] ,input[type="email"] ,input[type="number"] ,
+        input[type="date"] ,input[type="time"] ,input[list="lct"], select{
+            padding: 5px;
+            width: 90%;
+            margin: 10px 0px;
+        }
+        .gender{
+            margin: 20px 0px;
+        }
+
+        .skill {
+            margin: 20px 0px;
+            
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px 0px  0px  70px;
+            border: none;
+            border-radius: 10px;
+            background-color: coral;
+            &:hover{
+                background-color: #ccc;
+            }
+        }
+    }
+}
